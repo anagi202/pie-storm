@@ -8,5 +8,5 @@ https://medium.com/@threefifteen/a-humble-attempt-to-gamify-charitable-donations
 
 ## Getting Started
 
-For help getting started with Flutter, view our online
+For help getting started with Flutter, view their online
 [documentation](https://flutter.io/).
