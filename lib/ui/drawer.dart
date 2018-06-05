@@ -10,14 +10,80 @@ class DrawerDemoState extends StatelessWidget {
         child: new Column(
       children: <Widget>[
         new UserAccountsDrawerHeader(
-            accountName: const Text('Carmelo Anthony'),
-            accountEmail: const Text('carmeloanthony@gmail.com'),
-            currentAccountPicture: new CircleAvatar(
-                backgroundImage: new AssetImage('assets/carmelo.png')
-              ),
-            ),
+          accountName: const Text('Carmelo Anthony'),
+          accountEmail: const Text('carmeloanthony@gmail.com'),
+          currentAccountPicture: new CircleAvatar(
+              backgroundImage: new AssetImage('assets/carmelo.png')),
+        ),
         new ListTile(
-          title: new Text('Item 1'),
+          leading: const Icon(Icons.person_outline),
+          title: const Text('Contributions'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SecondScreen()));
+          },
+        ),
+        new ListTile(
+          leading: const Icon(Icons.favorite_border),
+          title: const Text('Favorites'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SecondScreen()));
+          },
+        ),
+        new ListTile(
+          leading: const Icon(Icons.search),
+          title: const Text('Explore'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SecondScreen()));
+          },
+        ),
+        new ListTile(
+          leading: const Icon(Icons.favorite_border),
+          title: const Text('Favorites'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SecondScreen()));
+          },
+        ),
+        new ListTile(
+          leading: const Icon(Icons.trending_up),
+          title: const Text('Trending'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SecondScreen()));
+          },
+        ),
+        new ListTile(
+          leading: const Icon(Icons.people_outline),
+          title: const Text('Leaderboards'),
+          onTap: () {
+            Navigator.pop(context);
+            Navigator.push(
+                context,
+                new MaterialPageRoute(
+                    builder: (context) => new SecondScreen()));
+          },
+        ),
+        new ListTile(
+          leading: const Icon(Icons.business),
+          title: const Text('Tax Documents'),
           onTap: () {
             Navigator.pop(context);
             Navigator.push(
