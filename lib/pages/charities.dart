@@ -11,10 +11,8 @@ class SecondScreen extends StatelessWidget {
       body: new Center(
         child: new RaisedButton(
           onPressed: () {
-            Navigator.push(
-                context,
-                new MaterialPageRoute(
-                    builder: (context) => new Profile()));
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new Profile()));
           },
           child: new Text('Go back!'),
         ),
